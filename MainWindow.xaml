@@ -14,7 +14,10 @@
     <TextBox Name="textBox2" FontSize="20" Margin="343,154,39,152" ></TextBox>
     <Label Name="idLabel" FontSize="20" Margin="135,106,615,259" RenderTransformOrigin="1.734,0.465">Id</Label>
     <Label Name="StausLabel" FontSize="20" Margin="474,101,170,259" RenderTransformOrigin="1.734,0.465">User status</Label>
-    <Label Name="NameLabel" FontSize="35" Margin="259,27,259,311" RenderTransformOrigin="1.734,0.465">Vk Status Parser</Label>
+        <Button Name="UpdBtn" Background="IndianRed" Content="Update" FontSize="20" Click="UpdButton_Click" Margin="73,329,553,30" RenderTransformOrigin="0.5,0.529" />
+
+        <Label Name="NameLabel" FontSize="35" Margin="259,27,259,311" RenderTransformOrigin="1.734,0.465">Vk Status Parser</Label>
+      
 
   </Grid>
 </Window>
