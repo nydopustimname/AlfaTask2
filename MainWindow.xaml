@@ -14,10 +14,10 @@
     <Label Name="idLabel" FontSize="20" Margin="358,106,1208,430" RenderTransformOrigin="1.734,0.465">Id</Label>
     <Label Name="StausLabel" FontSize="20" Margin="890,111,586,398" RenderTransformOrigin="1.734,0.465">User status</Label>
     <Label Name="NameLabel" FontSize="35" Margin="632,37,632,478" RenderTransformOrigin="1.734,0.465">Vk Status Parser</Label>
-        <Label Name="InvLabel" FontSize="20" Margin="890,130,586,398" RenderTransformOrigin="1.734,0.465" Visibility="Hidden">Invalid Link</Label>
+        <Label Name="AutLabel" FontSize="13" Margin="890,343,320,441" RenderTransformOrigin="1.734,0.465">Invalid links will be automatically deleted</Label>
         <Button Name="UpdBtn" Background="IndianRed" Content="Update" FontSize="20" Click="UpdButton_Click" Margin="296,322,1121,513" RenderTransformOrigin="0.5,0.529" />
-    <CheckBox Name="Check" Checked="UpdCheck" Margin="893,300,207,47">
-      <TextBlock Height="63" Width="243" RenderTransformOrigin="0.534,0.511" FontSize="20">
+    <CheckBox Name="Check" Checked="UpdCheck" Margin="893,299,320,478">
+      <TextBlock Height="63" Width="366" RenderTransformOrigin="0.534,0.511" FontSize="20">
         Auto update  
       </TextBlock>
     </CheckBox>
