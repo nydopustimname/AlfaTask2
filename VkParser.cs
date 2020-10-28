@@ -36,7 +36,7 @@ namespace AlfaTask2
             string status = Regex.Replace(st, pattern, String.Empty);
             if (st != ""&& status!="")
                 return status;
-            else return "Page is available only to authorized users(";
+            else return "User has no status or page is available only to authorized users";
         }
 
        
