@@ -6,11 +6,15 @@
         xmlns:local="clr-namespace:AlfaTask2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox Name="textBox1" Margin="46,103,547,289" ></TextBox>
+  <Grid>
+    <Grid Background="LavenderBlush"/>
+    <TextBox Name="textBox1"  FontSize="15" Margin="57,154,537,217" ></TextBox>
 
-        <Button Name="parseBtn" Content="Parse" Click="Button_Click" Margin="78,190,580,199" RenderTransformOrigin="0.5,0.529" />
-        <TextBox Name="textBox2" Margin="287,103,95,239" >User status</TextBox>
-        <Label Name="idLabel" Margin="21,106,759,289" RenderTransformOrigin="1.734,0.465">Id</Label>
-    </Grid>
+    <Button Name="parseBtn" Background="IndianRed" Content="Parse" FontSize="20" Click="Button_Click" Margin="73,232,553,127" RenderTransformOrigin="0.5,0.529" />
+    <TextBox Name="textBox2" FontSize="20" Margin="343,154,39,152" ></TextBox>
+    <Label Name="idLabel" FontSize="20" Margin="135,106,615,259" RenderTransformOrigin="1.734,0.465">Id</Label>
+    <Label Name="StausLabel" FontSize="20" Margin="474,101,170,259" RenderTransformOrigin="1.734,0.465">User status</Label>
+    <Label Name="NameLabel" FontSize="35" Margin="259,27,259,311" RenderTransformOrigin="1.734,0.465">Vk Status Parser</Label>
+
+  </Grid>
 </Window>

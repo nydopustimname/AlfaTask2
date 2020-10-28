@@ -65,6 +65,8 @@ namespace AlfaTask2
             WebClient client = new WebClient();
             client.Encoding = System.Text.Encoding.UTF8;
             Stream stream = client.OpenRead(url);
+            if (stream == null)
+                return "Invalid link";
             StreamReader sr = new StreamReader(stream);
             string newLine;
 
