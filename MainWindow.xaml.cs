@@ -43,11 +43,7 @@ namespace AlfaTask2
             textBox2.Text = s;
         }
 
-        private void Button_Click1(object sender, RoutedEventArgs e)
-        {
-            AuthorizationForm GetToken = new AuthorizationForm();
-            GetToken.ShowDialog();
-        }
+       
 
         private void Text_Changed(object sender, RoutedEventArgs e)
         {
