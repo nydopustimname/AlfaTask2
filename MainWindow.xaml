@@ -4,17 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AlfaTask2"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900" Width="1600" WindowState="Maximized">
   <Grid>
-    <Grid Background="LavenderBlush"/>
-    <TextBox Name="textBox1"  FontSize="15" Margin="57,154,537,217" ></TextBox>
+    <Grid Background="LavenderBlush" />
+    <TextBox Name="textBox1"  FontSize="15" Margin="208,149,1058,694" ></TextBox>
 
-    <Button Name="parseBtn" Background="IndianRed" Content="Parse" FontSize="20" Click="Button_Click" Margin="73,232,553,127" RenderTransformOrigin="0.5,0.529" />
-    <TextBox Name="textBox2" FontSize="20" Margin="343,154,39,152" ></TextBox>
-    <Label Name="idLabel" FontSize="20" Margin="135,106,615,259" RenderTransformOrigin="1.734,0.465">Id</Label>
-    <Label Name="StausLabel" FontSize="20" Margin="474,101,170,259" RenderTransformOrigin="1.734,0.465">User status</Label>
-    <Label Name="NameLabel" FontSize="35" Margin="259,27,259,311" RenderTransformOrigin="1.734,0.465">Vk Status Parser</Label>
-
+    <Button Name="parseBtn" Background="IndianRed" Content="Parse" FontSize="20" Click="Button_Click"  Margin="298,222,1121,613" RenderTransformOrigin="0.528,0.506" />
+    <TextBox Name="textBox2" FontSize="20" Margin="890,149,379,660" ></TextBox>
+    <Label Name="idLabel" FontSize="20" Margin="358,106,1208,430" RenderTransformOrigin="1.734,0.465">Id</Label>
+    <Label Name="StausLabel" FontSize="20" Margin="890,111,586,398" RenderTransformOrigin="1.734,0.465">User status</Label>
+    <Label Name="NameLabel" FontSize="35" Margin="632,37,632,478" RenderTransformOrigin="1.734,0.465">Vk Status Parser</Label>
+        <Label Name="InvLabel" FontSize="20" Margin="890,130,586,398" RenderTransformOrigin="1.734,0.465" Visibility="Hidden">Invalid Link</Label>
+        <Button Name="UpdBtn" Background="IndianRed" Content="Update" FontSize="20" Click="UpdButton_Click" Margin="296,322,1121,513" RenderTransformOrigin="0.5,0.529" />
+    <CheckBox Name="Check" Checked="UpdCheck" Margin="893,300,207,47">
+      <TextBlock Height="63" Width="243" RenderTransformOrigin="0.534,0.511" FontSize="20">
+        Auto update  
+      </TextBlock>
+    </CheckBox>
   </Grid>
 </Window>

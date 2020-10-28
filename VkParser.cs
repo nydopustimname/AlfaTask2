@@ -42,7 +42,6 @@ namespace AlfaTask2
             set
             {
                 user = value;
-                
             }
         }
 
@@ -64,9 +63,16 @@ namespace AlfaTask2
         {
             WebClient client = new WebClient();
             client.Encoding = System.Text.Encoding.UTF8;
-            Stream stream = client.OpenRead(url);
-            if (stream == null)
+            Stream stream;
+            try
+            {
+             stream = client.OpenRead(url);
+            }
+            catch(Exception e)
+            {
                 return "Invalid link";
+            }
+            
             StreamReader sr = new StreamReader(stream);
             string newLine;
 

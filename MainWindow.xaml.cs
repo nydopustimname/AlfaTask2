@@ -1,8 +1,5 @@
 ﻿using AlfaTask2.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,12 +11,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AutoItX3Lib;
 
 namespace AlfaTask2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
         private CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
@@ -41,13 +37,30 @@ namespace AlfaTask2
 
             string s= VP.ParseAsync(textBox1.Text);
             textBox2.Text = s;
+            UpdCheck(sender, e);
         }
-
-       
+        
+        private void UpdCheck(object s, RoutedEventArgs e)
+        {
+            if ((bool)Check.IsChecked && textBox2.Text=="Invalid link")
+            {
+                
+                Thread.Sleep(3000);
+                var upd = new AutoUpd();
+                    upd.Upd();
+            }
+        }
+        private void UpdButton_Click (object s, RoutedEventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            
+        }
 
         private void Text_Changed(object sender, RoutedEventArgs e)
         {
             
+
         }
     }
 }
