@@ -17,9 +17,7 @@ using System.Windows.Shapes;
 
 namespace AlfaTask2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
         private CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
@@ -27,14 +25,9 @@ namespace AlfaTask2
         public MainWindow()
         {
             InitializeComponent();
-            Loaded += MainWindow_Loaded;
         }
 
-        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            DataContext = new UserViewModel();
-        }
-
+       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var VP = new VkParser();
@@ -43,11 +36,5 @@ namespace AlfaTask2
             textBox2.Text = s;
         }
 
-       
-
-        private void Text_Changed(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
 }
